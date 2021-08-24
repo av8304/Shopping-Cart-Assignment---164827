@@ -1,6 +1,6 @@
 // Get the products list and seggregate them according to the categories
 const getProducts = () => {
-  return fetch("http://localhost:3001/product").then((data) => data.json());
+  return fetch("/product").then((data) => data.json());
 };
 
 const displayProducts = () => {

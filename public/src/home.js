@@ -1,6 +1,6 @@
 //creating the banners using carousel
 const getBanners = () => {
-  return fetch("http://localhost:3001/banner").then((data) => data.json());
+  return fetch("/banner").then((data) => data.json());
 };
 
 const createBanner = () => {
@@ -37,7 +37,7 @@ const createBannerUtil = (carouselContainer, bannerList) => {
 
 //creating the display categories on the home page
 const getCategories = () => {
-  return fetch("http://localhost:3001/category").then((data) => data.json());
+  return fetch("/category").then((data) => data.json());
 };
 
 const displayCategories = () => {
